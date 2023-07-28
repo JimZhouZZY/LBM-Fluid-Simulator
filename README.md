@@ -1,11 +1,20 @@
-# LBM Fluid Simulator
+# LBM Fluid Simulator <br> 格子-玻尔兹曼法流体力学数值模拟计算器
+<p align="right"> English-Chinese <br> 英汉双语</p>
+
 This project was a project for a competition.<br>
 It is **a fluid simulator using Lattice-Boltzmann Method with nice GUI** (two GUI versions, Tkinter and PyQt5). I started the project in September, 2021. And the result came that I won the first prize in March, 2023. There isn't any secret now, so I'm uploading to share my work. Though this project is mainly in Chinese, I hope this can help someone. <br>
 
 ## Tips:
-1. **Please be sure to run the code in the code's root floder**. There is still some logic issues in the program (that I'm too lazy and busy to solve now), especially when doing file operations like screenshotting and saving project. It will possibly accidentally create some .PNG or .LBM files if you are not running the code in the code's root directory, and there may be issues while running without "Screenshots" floder, icon files, and .ttf file(if PyQt5 version). So make sure you "cd" to the projects floder first then "py main.py".
+1. **Please be sure to run the code in the code's root floder**. There is still some logic issues in the program (that I'm too lazy and busy to solve now), especially when doing file operations like screenshotting and saving project. It will possibly accidentally create some .PNG or .LBM files if you are not running the code in the code's root directory. So make sure you "cd" to the projects floder first then "py main.py".
+2. **Make sure you haven't missed a file**. There may be issues while running without "Screenshots" floder, icon files, or .ttf file(in PyQt5 version)
+3. **Tkinter Version is recommended**. It's more fully annotated.
+4. Actually sympy is unnecessary in PyQt5 version. I remember I once replaced it with numpy, but I the code is in my school. Maybe I'll update when I'm back to school.
 
 （under construction）
+
+## Environments:
+**Tkinter Version**: Python3 with matplotlib. <br>
+**PyQt5 Version**: Python3 with matplotlib, sympy and PyQt5. <br>
 
 ## Theme of the Project:
 Since the development of fluid mechanics, it has penetrated into all aspects of life.<br>
@@ -38,14 +47,23 @@ For professional learning, the algorithm of this program adopts simple BGK simul
 ## References:
 https://physics.weber.edu/schroeder/fluids/
 
+<p align="right"> Jim Zhou (ZZY) <br> 2023.7.28 </p>
+
 # 格子-玻尔兹曼法流体力学数值模拟计算器
 这个项目是为了参加比赛而编写的 <br>
 它是**一个拥有漂亮易用的GUI（包括Tkinter和PyQt5两个版本）的，使用格子玻尔兹曼法的流体力学数值计算程序**。我从2021年11月开始这个项目，经过两年的努力，成功拿到了参与的比赛的一等奖第一名。现在这个项目已经不需要保密，因此我将它上传于此，希望能够为需要帮助的人尽一点绵薄之力。
 
 ## 提示：
-1. **请保证在代码所在的根目录下运行代码**。由于时间仓促和后来我的慵懒于忙碌，无暇再改一些程序中的低级逻辑错误。具体多是在文件操作上，有时因为目录不对、缺乏文件等，会报错/错误操作文件。因此请先"cd"到项目所在的目录，然后再"py main.py"打开
+1. **请确保在代码所在的根目录下运行代码**。由于时间仓促和后来我的慵懒于忙碌，无暇再改一些程序中的低级逻辑错误。具体多是在文件操作上，有时因为目录不对、缺乏文件等，会报错/错误操作文件。因此请先"cd"到项目所在的目录，然后再"py main.py"打开
+2. **请确保没有遗漏文件**。如果缺失“Screenshots”文件夹、图标文件或.ttf字体文件，程序可能报错。
+3. **更加推荐Tkinter版本**。Tkinter版本的注释更加完善。
+4. 事实上PyQt5版本中的sympy库是非必要的。我记得做过一个删去sympy用numpy代替的版本，但是源码在学校忘记拷回来了。等我有空回学校再上传吧。
 
 （施工中）
+
+## 运行环境:
+**Tkinter版本**: 带有 matplotlib 库的 Python3。 <br>
+**PyQt5版本**: 带有 matplotlib、sympy 和 PyQt5 库的 Python3。 <br>
 
 ## 作品主题：
 流体力学发展至今，已经深入到了生活的方方面面。 <br>
@@ -78,3 +96,5 @@ https://physics.weber.edu/schroeder/fluids/
 
 ## 参考资源
 https://physics.weber.edu/schroeder/fluids/
+
+<p align="right"> 周支宇 (ZZY) <br> 2023.7.28 </p>
