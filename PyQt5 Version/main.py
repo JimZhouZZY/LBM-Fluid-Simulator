@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 ################################################
-#LBM_Fluid_SimulatorV1.4.5                     #
 #Made by ZZY                                   #
 #2021.11 - 2022.3                              #
 #秦皇岛市海港区                                 #
@@ -32,10 +31,10 @@
 # 日志：2022/3/11  好久没记了。懒。Pyqt5
 # 日志：懒懒懒
 # 日志：2022/3     做完啦！
-# 已知但未改的BUG：1.截图需要截图文件夹，否则无法截图。2.删去Sympy模块，使用nympy重写
+
 #import numexpr
 #from inspect import Traceback
-import winsound
+#import winsound
 from fileinput import filename
 #from tkinter import Widget, ttk
 import traceback
@@ -54,7 +53,7 @@ import sympy
 import sys
 import threading
 import time
-import multiprocessing
+#import multiprocessing
 #from PyQt5 import QtCore, QtWidgets, QtGui
 from PyQt5.QtCore import Qt
 from PyQt5.QtCore import QTimer 
@@ -86,7 +85,7 @@ from PyQt5.QtWidgets import QLineEdit
 from PyQt5.QtWidgets import QCheckBox
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from sympy import *
-import webbrowser
+#import webbrowser
 
 #from sympy.solvers.diophantine.diophantine import prime_as_sum_of_two_squares
 #import qtawesome
@@ -267,7 +266,6 @@ def stream():
             change_barrier_switch = False
             blood[:, :] = 0
             blood[barrier] = 100
-            '''
             if show_lift_drag:
                 for i in range(height):
                     for j in range(width):
@@ -281,7 +279,6 @@ def stream():
                             barrier_zone[i, j+1] = True
                             barrier_zone[i-1, j+1] = True
                             barrier_zone[i+1, j-1] = True
-            '''
         n[3] = numpy.roll(n[3], 1, axis=0)  
         n[2] = numpy.roll(n[2], 1, axis=0)
         n[4] = numpy.roll(n[4], 1, axis=0)
@@ -392,7 +389,7 @@ def collide():
         print('KILLED')
         sys.exit()
     try:
-        omega = 1 /(3 * viscosity + 0.5)
+        omega = 1 / (3 * viscosity + 0.5)
         rho = n[0] + n[3] + n[7] + n[1] + n[5] + n[2] + n[8] + n[4] + n[6]
         ux = (n[1] + n[2] + n[8] - n[5] - n[4] - n[6]) / rho
         uy = (n[3] + n[2] + n[4] - n[7] - n[8] - n[6]) / rho
@@ -1696,7 +1693,7 @@ class Main_window(QWidget):
         # 滑动条
         self.slider_u0=QSlider(Qt.Horizontal)
         self.slider_u0.setMinimum(0)#最小值,100倍，下同
-        self.slider_u0.setMaximum(200)#最大值
+        self.slider_u0.setMaximum(120)#最大值
         self.slider_u0.setSingleStep(1)#步长
         self.slider_u0.setTickPosition(QSlider.TicksBelow)#设置刻度位置，在下方
         self.slider_u0.setTickInterval(30)#设置刻度间隔
