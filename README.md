@@ -3,7 +3,7 @@ This project was a project for a competition.<br>
 It is **a fluid simulator using Lattice-Boltzmann Method with nice GUI** (two GUI versions, Tkinter and PyQt5). I started the project in September, 2021. And the result came that I won the first prize in March, 2023. There isn't any secret now, so I'm uploading to share my work. Though this project is mainly in Chinese, I hope this can help someone. <br>
 
 ## Tips:
-1. **Please be sure to run the program in the program's root floder**. There is still some logic issues in the program (that I'm too lazy and busy to solve now), especially when doing file operations like screenshotting and saving project. It will possibly accidentally create some .PNG or .LBM files if you are not running the code in the code's root directory, and there may be issues while running without "Screenshots" floder, icon files, and .ttf file(if PyQt5 version). So make sure you "cd" to the projects floder first then "py main.py".
+1. **Please be sure to run the code in the code's root floder**. There is still some logic issues in the program (that I'm too lazy and busy to solve now), especially when doing file operations like screenshotting and saving project. It will possibly accidentally create some .PNG or .LBM files if you are not running the code in the code's root directory, and there may be issues while running without "Screenshots" floder, icon files, and .ttf file(if PyQt5 version). So make sure you "cd" to the projects floder first then "py main.py".
 
 （under construction）
 
@@ -23,6 +23,7 @@ For professional learning, the algorithm of this program adopts simple BGK simul
 ### Classic Example: Jet Flow
 ![（经典算例）喷射流](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/a238dbd7-e710-4528-a883-48098bac4980)
 ### Classic Example: Simple Porous Media
+![（经典算例）多孔介质2](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/dc0d6a07-e873-495f-9873-eb0c9d1c4fb9)
 ### Curl Animation
 ![旋度动画](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/62a233f3-6c6d-4454-bde3-e6816390fe23)
 ### Density Animation
@@ -37,3 +38,43 @@ For professional learning, the algorithm of this program adopts simple BGK simul
 ## References:
 https://physics.weber.edu/schroeder/fluids/
 
+# 格子-玻尔兹曼法流体力学数值模拟计算器
+这个项目是为了参加比赛而编写的 <br>
+它是**一个拥有漂亮易用的GUI（包括Tkinter和PyQt5两个版本）的，使用格子玻尔兹曼法的流体力学数值计算程序**。我从2021年11月开始这个项目，经过两年的努力，成功拿到了参与的比赛的一等奖第一名。现在这个项目已经不需要保密，因此我将它上传于此，希望能够为需要帮助的人尽一点绵薄之力。
+
+## 提示：
+1. **请保证在代码所在的根目录下运行代码**。由于时间仓促和后来我的慵懒于忙碌，无暇再改一些程序中的低级逻辑错误。具体多是在文件操作上，有时因为目录不对、缺乏文件等，会报错/错误操作文件。因此请先"cd"到项目所在的目录，然后再"py main.py"打开
+
+（施工中）
+
+## 作品主题：
+流体力学发展至今，已经深入到了生活的方方面面。 <br>
+在课堂中，也时常涉及到流体力学的知识。而很多时候，学校、老师没有合适的工具去演示，只能生硬地在黑板上用公式和简单的线条来讲述相关知识，这让许多同学很难理解，也很难体会到蕴藏在流体力学的抽象中的美妙。 <br>
+在学习中，不少数值方法或是流体力学的初学者苦于书本太抽象太跳跃，并且往往只能找到枯燥的核心代码，找不到方便实践的简单算法程序。 <br>
+本程序正能解决这些问题。 <br>
+对于课堂教学，本程序既有科学严谨的LBM算法，又有简单易用的GUI以及丰富的交互性，几乎满足所有谭舒调整的需要，能够科学而方便快捷地演示流动现象。 <br>
+对于专业学习，本程序的算法采用简单的BGK模拟，严谨中不失简单易懂。丰富的交互功能实现单次计算，多次调参，摆脱枯燥的调参过程，加快对各种参数意义的理解。 <br>
+
+## 效果图
+
+### Overview of the program interface
+![窗口总览](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/962a31b1-3761-4836-8da5-809ad7d90045)
+### 经典算例：顶盖驱动流
+![（经典算例）顶盖驱动流](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/663fa756-7c4f-4d79-b84c-fd88475e61e9)
+### 经典算例：喷射流
+![（经典算例）喷射流](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/a238dbd7-e710-4528-a883-48098bac4980)
+### 经典算例：简单的多孔介质
+![（经典算例）多孔介质2](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/dc0d6a07-e873-495f-9873-eb0c9d1c4fb9)
+### 旋度动画
+![旋度动画](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/62a233f3-6c6d-4454-bde3-e6816390fe23)
+### 密度动画
+![密度动画](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/2d846618-541e-4282-b9d0-bf1e2a2830a3)
+### 垂直速度动画
+![垂直速度动画](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/6bfb4eee-9aa8-46a2-9f9c-66eba76b31c9)
+### 水平速度动画
+![水平速度动画](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/bd790595-728c-41d0-b4c8-07927e70879c)
+### 速度矢量动画
+![速度矢量动画](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/6a5d5e56-ab97-45f2-96a7-199668a41b10)
+
+## 参考资源
+https://physics.weber.edu/schroeder/fluids/
