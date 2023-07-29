@@ -75,7 +75,7 @@ https://physics.weber.edu/schroeder/fluids/
 
 ## 效果图
 
-### Overview of the program interface
+### 窗口总览
 ![窗口总览](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/962a31b1-3761-4836-8da5-809ad7d90045)
 ### 经典算例：顶盖驱动流
 ![（经典算例）顶盖驱动流](https://github.com/JimZhouZZY/LBM-Fluid-Simulator/assets/140597003/663fa756-7c4f-4d79-b84c-fd88475e61e9)
