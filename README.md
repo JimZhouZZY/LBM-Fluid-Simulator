@@ -1,5 +1,8 @@
 # LBM Fluid Simulator <br> 格子-玻尔兹曼法流体力学数值模拟计算器
-<p align="right"> English-Chinese <br> 英汉双语</p>
+[ English | 中文 ]
+
+**WARNING: Codes are really bad due to my lazy and lack of experience. I'm sorry about this**
+
 
 This project was a project for a competition.<br>
 It is **a fluid simulator using Lattice-Boltzmann Method with nice GUI** (two GUI versions, Tkinter and PyQt5). I started the project in September, 2021. And the result came that I won the first prize in March, 2023. There isn't any secret now, so I'm uploading to share my work. Though this project is mainly in Chinese, I hope this can help someone. <br>
@@ -50,6 +53,9 @@ https://physics.weber.edu/schroeder/fluids/
 <p align="right"> Jim Zhou (ZZY) <br> 2023.7.28 </p>
 
 # 格子-玻尔兹曼法流体力学数值模拟计算器
+
+**屎山警告**
+
 这个项目是为了参加比赛而编写的 <br>
 它是**一个拥有漂亮易用的GUI（包括Tkinter和PyQt5两个版本）的，使用格子玻尔兹曼法的流体力学数值计算程序**。我从2021年11月开始这个项目，经过两年的努力，成功拿到了参与的比赛的一等奖第一名。现在这个项目已经不需要保密，因此我将它上传于此，希望能够为需要帮助的人尽一点绵薄之力。由于能力和水平有限，粗陋之处请多多包涵。
 
