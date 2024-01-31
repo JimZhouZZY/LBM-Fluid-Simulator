@@ -1940,7 +1940,7 @@ class Main_window(QWidget):
 
         # 菜单栏
         self.menuBar = QMenuBar(self)
-        self.menuBar.resize(3000, 25)
+        self.menuBar.resize(3000, 30)
 
         self.menu_file = self.menuBar.addMenu('文件')
         self.action_file_import = QAction('导入', self)
@@ -2577,7 +2577,7 @@ class Main_window(QWidget):
         #self.alert_window.show()
     
     def SetEqProgressBar(self, value):
-        self.equation_window.progressbar.setValue(value)
+        self.equation_window.progressbar.setValue(int(value))
     
     def closeEvent(self,event): #函数名固定不可变
         global kill
@@ -2744,8 +2744,8 @@ class Equation_window(QWidget):
 
         # 滑动条
         self.slider_x=QSlider(Qt.Horizontal)
-        self.slider_x.setMinimum(-width/2)
-        self.slider_x.setMaximum(width/2)
+        self.slider_x.setMinimum(int(-width/2))
+        self.slider_x.setMaximum(int(width/2))
         self.slider_x.setSingleStep(1)
         self.slider_x.setTickPosition(QSlider.TicksBelow)
         self.slider_x.setTickInterval(10)
@@ -2753,8 +2753,8 @@ class Equation_window(QWidget):
         self.slider_x.valueChanged.connect(self.Change_x)
 
         self.slider_y=QSlider(Qt.Vertical)
-        self.slider_y.setMinimum(-height/2)
-        self.slider_y.setMaximum(height/2)
+        self.slider_y.setMinimum(int(-height/2))
+        self.slider_y.setMaximum(int(height/2))
         self.slider_y.setSingleStep(1)
         self.slider_y.setTickPosition(QSlider.TicksBelow)
         self.slider_y.setTickInterval(10)
