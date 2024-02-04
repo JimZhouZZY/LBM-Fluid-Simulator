@@ -2126,11 +2126,9 @@ class Main_window(QWidget):
         self.menu_edge.addAction(self.menu_edge_3)
 
         
-        
-
         self.menu_about = self.menuBar.addMenu('关于')
         self.action_about_algorithm = QAction('算法', self)
-        self.action_about_algorithm.triggered.connect(lambda:self.web("http://82.157.170.107/2022/03/29/%e6%a0%bc%e5%ad%90%e7%8e%bb%e5%b0%94%e5%85%b9%e6%9b%bc%e7%ae%97%e6%b3%95/"))
+        #self.action_about_algorithm.triggered.connect(lambda:self.web("http://82.157.170.107/2022/03/29/%e6%a0%bc%e5%ad%90%e7%8e%bb%e5%b0%94%e5%85%b9%e6%9b%bc%e7%ae%97%e6%b3%95/"))
         self.action_about_author = QAction('作者', self)
         self.action_about_author.triggered.connect(self.AuthorWindow)
         self.action_about_instructor = QAction('指导', self)
@@ -2145,7 +2143,7 @@ class Main_window(QWidget):
 
         self.menu_help = self.menuBar.addMenu('帮助')
         self.action_help_doc = QAction('帮助文档', self)
-        self.action_help_doc.triggered.connect(lambda:self.web("http://82.157.170.107/2022/01/22/fluidsimulator/"))
+        #self.action_help_doc.triggered.connect(lambda:self.web("http://82.157.170.107/2022/01/22/fluidsimulator/"))
         self.menu_help.addAction(self.action_help_doc)
 
         #状态栏
@@ -2366,7 +2364,7 @@ class Main_window(QWidget):
 
     def InstructorWindow(self):
         self.instructor_window.show()
-
+:
     def ThanksWindow(self):
         self.thanks_window.show()
 
