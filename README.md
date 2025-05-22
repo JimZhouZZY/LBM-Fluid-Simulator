@@ -1,7 +1,7 @@
 # LBM Fluid Simulator <br> 格子-玻尔兹曼法流体力学数值模拟计算器
 [ English | 中文 ]
 
-**WARNING: Codes are really bad due to my lazy and lack of experience. I'm sorry about this**
+**WARNING: The code style is really bad due to my lazy and lack of experience. I'm sorry about this**
 
 
 This project was a project for a competition.<br>
